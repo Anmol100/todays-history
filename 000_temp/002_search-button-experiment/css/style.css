@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+html, body, form, input, button {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+body {
+  /* background: #5a279c; */
+  /* color: #fff; */
+  border: 2px solid red;
+}
+
+.inputbox {
+  height: 50px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 2px solid blue;
+}
+
+.inputbox input {
+  /* check later */
+  width: 100%;
+  min-width: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  padding: 16.5px 0;
+  border: 0;
+  background: none;
+  width: 50px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 100%;
+  -webkit-transition: width 1s ease-in-out, border-radius 1s ease-in-out, padding 1s;
+  transition: width 1s ease-in-out, border-radius 1s ease-in-out, padding 1s;
+  -webkit-transition-delay: 0s, 1s, 0s;
+          transition-delay: 0s, 1s, 0s;
+  -webkit-box-shadow: 0 0 0 1px currentColor;
+          box-shadow: 0 0 0 1px currentColor;
+  color: inherit;
+  cursor: pointer;
+  padding: 16.5px 0;
+  padding-right: 50px;
+  font-weight: lighter;
+  font-family: 'Roboto';
+  border: 2px solid green;
+}
+.inputbox input:focus, .inputbox input:valid {
+  width: 100%;
+  -webkit-transition-delay: 1s, 0s, 1s;
+          transition-delay: 1s, 0s, 1s;
+  outline: 0;
+  border-radius: 0;
+  cursor: text;
+  padding-left: 16.5px;
+  border: 2px solid orange;
+}
+.inputbox input:focus + .del, .inputbox input:valid + .del {
+  pointer-events: all;
+  left: calc(100% - 25px);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  border: 2px solid royalblue;
+}
+.inputbox input:focus + .del:focus, .inputbox input:valid + .del:focus {
+  -webkit-box-shadow: 0 0 0 1px currentColor;
+          box-shadow: 0 0 0 1px currentColor;
+  height: 37.5px;
+  width: 37.5px;
+  border: 2px solid lime;
+}
+.inputbox input:focus + .del:before, .inputbox input:valid + .del:before {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg) scaleY(0.7);
+          transform: translate(-50%, -50%) rotate(-45deg) scaleY(0.7);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  border: 2px solid HotPink;
+}
+.inputbox input:focus + .del:after, .inputbox input:valid + .del:after {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg) scaleY(0.7);
+          transform: translate(-50%, -50%) rotate(45deg) scaleY(0.7);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  border: 2px solid Olive;
+}
+.inputbox .del {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 50px;
+  width: 50px;
+  padding: 0;
+  background: none;
+  border-radius: 100%;
+  border: 0;
+  pointer-events: none;
+  -webkit-transition: left 1s ease-in-out;
+  transition: left 1s ease-in-out;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+  color: inherit;
+  cursor: pointer;
+  border: 2px solid Crimson;
+}
+.inputbox .del:focus {
+  outline: none;
+  border: 2px solid DarkViolet;
+}
+.inputbox .del:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: currentColor;
+  width: 1px;
+  height: 37.5px;
+  -webkit-transform: translate(32.25px, 32.25px) translate(-50%, -50%) rotate(-45deg) scaleY(1);
+          transform: translate(32.25px, 32.25px) translate(-50%, -50%) rotate(-45deg) scaleY(1);
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  border: 2px solid Turquoise;
+}
+.inputbox .del:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: currentColor;
+  width: 1px;
+  height: 37.5px;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg) scaleY(0);
+          transform: translate(-50%, -50%) rotate(45deg) scaleY(0);
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  border: 2px solid SpringGreen;
+}

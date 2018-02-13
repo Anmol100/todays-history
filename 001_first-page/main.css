@@ -89,13 +89,13 @@ body {
     top: -5rem;
 }
 
-/* .nav-down {
-  height : 10rem;
-} */
+.fixhead {
+  height : 95vh;
+}
 
 .fe {
   height: 500px;
-  width: 100px;
+  width: 250px;
   background-color: red;
   display: inline-block;
 
