@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+html, body, div, header , ul, li{
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+/* html {
+    font-size: 1.5vw;
+} */
+body {
+  background-color: ghostwhite;
+  padding-top: 6.5rem;
+}
+/* body:nth-child(2) { */
+  /* margin-top: 6rem; */
+  /* color: white; */
+/* } */
+@-moz-keyframes test {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+@-webkit-keyframes test {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.loading {
+    transition: all 600ms;
+    padding: 25px 0;
+    background: -webkit-linear-gradient(to right,#9933CC, #15a0d3, #0099CC, #aa66cc);
+    background: linear-gradient(to right,#9933CC, #33b5e5, #0099CC, #aa66cc);
+    background-size: 400% 400%;
+    color: white;
+    font-family: 'Lato';
+    animation: test 5s  ease-out infinite;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    /* height: 3.5rem; */
+    top: 0;
+    /* right: 0; */
+    /* left: 0; */
+    bottom: auto;
+    box-shadow: 0rem 0.4rem 2rem grey;
+}
+
+/* #headid { */
+  /* position: fixed; */
+  /* transition: top 0.5s ease-in-out; */
+/* } */
+.hedtab{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* align-content: center; */
+  list-style-type: none;
+}
+
+.hedtab a{
+    /* border: red solid 2px ; */
+    display: inline;
+    font-size: 2rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    color: white;
+    opacity: 0.6;
+}
+
+.hedtab a:hover {
+  opacity: 1;
+}
+
+.nav-up {
+    top: -5rem;
+}
+
+/* .nav-down {
+  height : 10rem;
+} */
+
+.fe {
+  height: 500px;
+  width: 100px;
+  background-color: red;
+  display: inline-block;
+
+}
