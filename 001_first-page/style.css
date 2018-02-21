@@ -16,18 +16,19 @@ input {
   /* background-color: khaki; */
 }
 .inputbox {
-  /* display: flex;
+  display: inline-block;
+  /*
   justify-content: center;
   align-items: center;
   flex-flow: column wrap; */
   height: 64px;
   width: 300px;
-  position: fixed;
+  position: absolute;
   /* top: 50%; */
   /* left: 50%; */
   /* -webkit-transform: translate(-50%, -50%); */
           /* transform: translate(-50%, -50%); */
-  /* border: 2px solid blue; */
+  border: 2px solid blue;
   /* background-color: blue; */
 }
 
@@ -177,7 +178,7 @@ input {
 }
 
 input[required] {
-  background-color: pink;
+  /* background-color: pink; */
   border: 2px solid black;
   /* border: 1px solid #fff; */
 }

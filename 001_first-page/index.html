@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="style.css">
   <!-- <link rel="stylesheet" href="mq_350-plus.css" media="(max-height: 350px)"> -->
   <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -21,8 +22,17 @@
       <li><a href="#">tab4</a></li>
       <li><a href="#">tab5</a></li>
       <li><a href="#">tab6</a></li>
-      <li class="hedsrch"><a href="#">Search</a></li>
+      <li class="hedsrch">
+        <form class="inputbox">
+          <input required="required"/>
+          <button class="del" type="reset"></button>
+        </form>
+      </li>
     </ul>
+    <!-- <form class="inputbox">
+      <input required="required"/>
+      <button class="del" type="reset"></button>
+    </form> -->
   </header>
   <div class="fe">div1</div>
   <div class="fe">div2</div>
